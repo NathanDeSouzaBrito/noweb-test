@@ -1,11 +1,6 @@
 import Style from "./style.module.css";
+import type { LiProps } from "./index.type";
 
-type LiProps = {
-  text: string;
-  icon?: React.ImgHTMLAttributes<HTMLImageElement>["src"];
-  title: string;
-  href: string;
-};
 const Li = ({ text, icon, title, href }: LiProps) => {
   return (
     <li>
