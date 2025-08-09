@@ -13,7 +13,7 @@ const NavBar = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <nav className="sm:justify-between flex items-center justify-around px-4 sm:px-6 lg:px-12 h-[80px] bg-white shadow-md relative z-50 ">
+    <nav className="flex items-center lg:justify-around px-4 sm:px-6 lg:px-12 h-[80px] bg-white shadow-md relative z-50 sm:justify-between">
       {/* Logo */}
       <div className="flex-shrink-0 md:mr-2">
         <img src={Logo} alt="Logo" className="w-28 sm:w-30 lg:w-37" />
