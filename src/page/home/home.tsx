@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
+import ServicesSection from "./ServicesSection";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <NavBar />
       <HeroSection />
       <AboutSection />
+      <ServicesSection />
     </body>
   );
 };
