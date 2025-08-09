@@ -13,14 +13,14 @@ const NavBar = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <nav className="flex items-center justify-between px-4 sm:px-6 lg:px-12 h-[80px] bg-white shadow-md relative z-50">
+    <nav className="sm:justify-between flex items-center justify-around px-4 sm:px-6 lg:px-12 h-[80px] bg-white shadow-md relative z-50 ">
       {/* Logo */}
-      <div className="flex-shrink-0">
-        <img src={Logo} alt="Logo" className="w-28 sm:w-32 lg:w-40" />
+      <div className="flex-shrink-0 md:mr-2">
+        <img src={Logo} alt="Logo" className="w-28 sm:w-30 lg:w-37" />
       </div>
 
       {/* Menu Desktop/Tablet */}
-      <ul className="hidden md:flex flex-row items-center gap-6 lg:gap-10 text-sm lg:text-base font-medium">
+      <ul className="hidden md:flex flex-row items-center gap-6 lg:gap-7 text-sm lg:text-base font-medium">
         <Li href="/" text="Home" title="home" icon={IconArrow} />
         <Li href="/aboutUs" text="About Us" title="About Us" />
         <Li
@@ -44,7 +44,7 @@ const NavBar = () => {
       {!isMenuOpen && (
         <button
           aria-label="Open Menu"
-          className="md:hidden flex items-center justify-center"
+          className="md:hidden flex items-center justify-center "
           onClick={toggleMenu}
         >
           <img className="w-8 h-8" src={IconButtonMenu} alt="Menu" />
