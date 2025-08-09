@@ -19,7 +19,8 @@ const AboutSection = () => {
         <img src={bgAboutSection} alt="" />
       </div>
       <section className={Style.aboutSection}>
-        <div>
+        {/* Description Area */}
+        <div className={Style.aboutDescription}>
           <div>
             <h1 className={Style.aboutH1}>
               We collaborate with a few disability service <br />
@@ -30,13 +31,19 @@ const AboutSection = () => {
 
           {/* Icon Eclipses */}
           <div>
-            <img src={IconEclipses} alt="Icone de eclipse" />
+            <img
+              className={Style.iconEclipses}
+              src={IconEclipses}
+              alt="Icone de eclipse"
+            />
           </div>
         </div>
-        <div>
+
+        {/* Card Area */}
+        <div className={Style.aboutCards}>
           <div>
-            <h2>25+</h2>
-            <h5>Years Of Experience</h5>
+            <h2 className={Style.aboutH2}>25+</h2>
+            <h5 className={Style.aboutH5}>Years Of Experience</h5>
           </div>
           <div>
             <p className={Style.aboutP}>
@@ -59,18 +66,24 @@ const AboutSection = () => {
             </a>
           </div>
         </div>
-        <div>
+
+        {/* Description Line Area */}
+        <div className={Style.aboutDescriptionLine}>
           <div>
-            <img src={lineSmall} alt="" />
+            <img src={lineSmall} alt="Line" />
           </div>
           <div>
-            <h3>We worked with global largest brands</h3>
+            <h3 className={Style.aboutH3}>
+              We worked with global largest brands
+            </h3>
           </div>
           <div>
-            <img src={lineBig} alt="" />
+            <img src={lineBig} alt="Line" />
           </div>
         </div>
-        <div>
+
+        {/* Logos Area */}
+        <div className={Style.aboutDescription}>
           <img src={logo1} alt="Logo" />
           <img src={logo2} alt="Logo" />
           <img src={logo3} alt="Logo" />
