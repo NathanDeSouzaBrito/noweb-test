@@ -21,14 +21,14 @@ const HeroSection = () => {
         </p>
 
         <div className={Style.heroReviews}>
-          <img src={IconReviews} alt="Reviews" />
+          <img className={Style.iconReviews} src={IconReviews} alt="Reviews" />
           <h3 className={Style.heroH3}>
             Excellent <b>4.000+</b> Reviews
           </h3>
         </div>
       </div>
       <div className={Style.heroDiv}>
-        <img src={IconWD} alt="" />
+        <img className={Style.iconWd} src={IconWD} alt="" />
         <div>
           <div className={Style.heroDivA}>
             <a href="">
