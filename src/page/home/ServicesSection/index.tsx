@@ -1,4 +1,4 @@
-import Card from "../../../components/Card";
+import Card from "../../../components/CardServices";
 import iconCubo from "../../../assets/icons/iconCubo.svg";
 import iconArrow1 from "../../../assets/icons/iconArrowCard.svg";
 import iconFlower from "../../../assets/icons/iconFlower.svg";
