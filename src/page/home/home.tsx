@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
 import StatsSection from "./StatsSection";
+import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutSection />
       <ServicesSection />
       <StatsSection />
+      <HowWeWork />
     </body>
   );
 };
