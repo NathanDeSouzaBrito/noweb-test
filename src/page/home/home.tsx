@@ -2,6 +2,7 @@ import NavBar from "../../components/NavBar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
+import StatsSection from "./StatsSection";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <StatsSection />
     </body>
   );
 };
