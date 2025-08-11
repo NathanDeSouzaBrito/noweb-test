@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -33,7 +35,7 @@
   justify-content: center;
   width: auto;
 
-  padding: 0 15% 0 15%;
+  padding: 0 14% 0 14%;
 }
 
 .divLinksSocial {
