@@ -4,6 +4,7 @@ import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
 import StatsSection from "./StatsSection";
 import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
+import ProjectsSection from "./ProjectsSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <ServicesSection />
       <StatsSection />
       <HowWeWork />
+      <ProjectsSection />
     </body>
   );
 };
