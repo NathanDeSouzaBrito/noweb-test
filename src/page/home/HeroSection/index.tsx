@@ -13,7 +13,7 @@ const HeroSection = () => {
         </p>
       </div>
       <div className={Style.heroDiv}>
-        <h1 className={Style.heroH1}>Digital</h1>
+        <h1 className={`${Style.heroH1} ${Style.heroH1Digital}`}>Digital</h1>
         <p className={Style.heroP}>
           We believe that the surest measure of success is when our <br />
           partners with us more than half It's more than just the <br />
@@ -31,11 +31,13 @@ const HeroSection = () => {
         <img className={Style.iconWd} src={IconWD} alt="" />
         <div>
           <div className={Style.heroDivA}>
-            <a href="">
+            <a href="/">
               <img src={IconViewAllSer} alt="" />
             </a>
           </div>
-          <h1 className={Style.heroH1}>Solution</h1>
+          <h1 className={`${Style.heroH1} ${Style.heroH1Solution}`}>
+            Solution
+          </h1>
         </div>
       </div>
     </section>
