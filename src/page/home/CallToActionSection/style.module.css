@@ -64,3 +64,40 @@
 
   color: #ffffff;
 }
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+
+/* Medium screens */
+@media (max-width: 920px) {
+  .callToActionH1 {
+    font-size: 50px;
+
+    margin-bottom: 60px;
+  }
+
+  .callToActionP {
+    font-size: 15px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .sectionCallToAction {
+    background-color: #121212;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5%;
+  }
+
+  .divLetsTalk {
+    margin-top: 35px;
+  }
+}
