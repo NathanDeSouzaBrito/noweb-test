@@ -3,7 +3,7 @@ import bgStatsSection from "../../../assets/imgs/bgStatsSection.png";
 
 const StatsSection = () => {
   return (
-    <section className="flex items-center justify-center flex-col">
+    <section className="flex items-center justify-center flex-col ">
       <div className="flex items-center justify-center p-8 h-[700px]">
         <img className="" src={IconStatsSection} alt="Icon Stats" />
       </div>

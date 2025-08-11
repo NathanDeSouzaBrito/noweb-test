@@ -54,13 +54,14 @@ const ProjectsSection = () => {
 
       {/* Column 3 */}
       <div className={Style.divColumn3}>
-        <div className={Style.subDivColumn2}>
+        <div className={Style.subDivColumn3}>
           <p className={Style.projectsP}>
             We believe that the surest measure of success <br />
             is when our partners with us more than half <br />
             It's more than just the visuals. We're here to <br />
             support your growth.
           </p>
+          <br />
           <p className={Style.projectsP}>
             We believe that the surest measure of success <br />
             is when our partners with us more than half <br />
@@ -69,23 +70,23 @@ const ProjectsSection = () => {
         </div>
         <div>
           <div>
-            <h3>Our Mission</h3>
+            <h3 className={Style.projectsH3}>Our Mission</h3>
             <p className={Style.projectsP}>
               Conduct thorough market research to the fast <br />
               target audience behaviours.
             </p>
           </div>
-          <div>
-            <div>
+          <div className={Style.projectsCards}>
+            <div className={Style.card1}>
               <img className={Style.image3} src={Image3} alt="" />
-              <p>
+              <p className={Style.pCard}>
                 Marketing <br />
                 Strategy
               </p>
             </div>
-            <div>
+            <div className={Style.card2}>
               <img className={Style.image4} src={Image4} alt="" />
-              <p>
+              <p className={Style.pCard}>
                 UX/UI <br />
                 Solution
               </p>

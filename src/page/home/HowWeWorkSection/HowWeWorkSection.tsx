@@ -6,7 +6,7 @@ import Icon3 from "../../../assets/icons/iconRepeat.svg";
 
 const HowWeWork = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 mt-20px">
+    <section className="flex flex-col items-center justify-center gap-10 h-[630px]">
       <div>
         <div className="flex flex-row justify-center">
           <img src={IconShape} alt="Icon" />

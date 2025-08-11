@@ -21,7 +21,6 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 40px;
-  leading-trim: CAP_HEIGHT;
   line-height: 50px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -34,7 +33,6 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
-  leading-trim: CAP_HEIGHT;
   line-height: 26px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -67,7 +65,6 @@
   font-weight: 700;
   font-style: Bold;
   font-size: 50px;
-  leading-trim: CAP_HEIGHT;
   line-height: 40px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -80,7 +77,6 @@
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
-  leading-trim: CAP_HEIGHT;
   line-height: 40px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -93,7 +89,6 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 24px;
-  leading-trim: CAP_HEIGHT;
   line-height: 24px;
   letter-spacing: 0%;
   text-transform: capitalize;
