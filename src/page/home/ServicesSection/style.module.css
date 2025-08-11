@@ -138,8 +138,14 @@
   }
 }
 
+@media (max-width: 762px) {
+  .divIconStar {
+    display: none;
+  }
+}
+
 /*Very small screens*/
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .serviceH1 {
     font-size: 40px;
   }
@@ -154,13 +160,6 @@
 
   .servicesP {
     margin: 0;
-  }
-
-  .divIconStar {
-    width: 25%;
-    height: 100%;
-    top: -20px;
-    left: 100px;
   }
 }
 

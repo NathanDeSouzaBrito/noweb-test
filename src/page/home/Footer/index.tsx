@@ -9,19 +9,19 @@ const Footer = () => {
   return (
     <footer className={Style.footer}>
       <div className={Style.divLinksFooter}>
-        <div className={Style.divA}>
+        <div className={`${Style.divA} ${Style.divAR}`}>
           <a href="/">About Company</a>
           <a href="/">Our Careers</a>
           <a href="/">Services</a>
           <a href="/">contact</a>
         </div>
-        <div className={Style.divA}>
+        <div className={`${Style.divA} ${Style.divAL}`}>
           <a href="/">Privacy Policy</a>
           <a href="/">Terms & Conditions</a>
         </div>
       </div>
       <img className={Style.footerLine} src={IconLine} alt="Icon Line" />
-      <div className={Style.divLinksFooter}>
+      <div className={`${Style.divLinksFooter} ${Style.divLinksFooterDown}`}>
         <div className={Style.divLinksSocial}>
           <a href="">
             <img src={IconFace} alt="Facebook" />
