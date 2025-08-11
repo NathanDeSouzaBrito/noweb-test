@@ -16,7 +16,6 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
-  leading-trim: CAP_HEIGHT;
   line-height: 24px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -29,7 +28,6 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 30px;
-  leading-trim: CAP_HEIGHT;
   line-height: 40px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -48,7 +46,6 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
-  leading-trim: CAP_HEIGHT;
   line-height: 26px;
   letter-spacing: 0%;
   text-transform: capitalize;
@@ -74,4 +71,22 @@
 
 .arrow:hover {
   transform: scale(1.05);
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 410px) {
+  .arrow {
+    position: absolute;
+    bottom: -0.3rem;
+    right: 0rem;
+  }
+  .card {
+    padding: 20px;
+
+    width: 330px;
+    height: auto;
+  }
 }
