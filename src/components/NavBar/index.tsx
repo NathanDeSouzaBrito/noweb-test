@@ -23,7 +23,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="flex h-[104px] items-center justify-around px-4 sm:px-6 lg:px-12 bg-white shadow-md relative z-50">
+    <nav className="fixed top-0 left-0 w-full flex h-[104px] items-center justify-around px-4 sm:px-6 lg:px-12 bg-white shadow-md z-50">
       {/* Logo */}
       <div className="flex-shrink-0 md:mr-2">
         <img src={Logo} alt="Logo" className="w-28 sm:w-25 lg:w-37" />
@@ -63,7 +63,7 @@ const NavBar = () => {
 
       {/* Menu Mobile Fullscreen */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white flex flex-col items-center justify-center gap-8 text-lg font-medium animate-fadeIn z-50">
+        <div className="fixed h-[60%] inset-0 bg-white flex flex-col items-center justify-center gap-8 text-lg font-medium animate-fadeIn z-50">
           {/* Botão Fechar */}
           <button
             aria-label="Close Menu"
