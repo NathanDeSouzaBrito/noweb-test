@@ -8,56 +8,60 @@ import IconContact from "../../../assets/icons/iconContactUs.svg";
 
 const ProjectsSection = () => {
   return (
-    <section>
+    <section className={Style.sectionProjects}>
       {/* Column 1 */}
-      <div>
-        <div>
-          <div>
+      <div className={Style.divColumn1}>
+        <div className={Style.subDivColumn1}>
+          <div className={Style.divH4}>
             <img src={IconShape} alt="Icone Shape" />
-            <h4>What Sets Us Apart</h4>
+            <h4 className={Style.projectsH4}>What Sets Us Apart</h4>
           </div>
-          <h1>
-            What Sets Us Apart Driving Digital Success <br />
+          <h1 className={Style.projectsH1}>
+            Driving Digital Success <br />
             with Strategy Design
           </h1>
-          <p>
+          <p className={Style.projectsP}>
             We believe that the surest measure of success is when our partners
             with <br />
             us more than half It's more than just the visuals.
           </p>
         </div>
         <div>
-          <img src={Image1} alt="Imagen" />
+          <img className={Style.image1} src={Image1} alt="Imagen" />
         </div>
       </div>
 
       {/* Column 2 */}
-      <div>
-        <div>
-          <img src={Image2} alt="Imagen" />
+      <div className={Style.divColumn2}>
+        <div className={Style.subDivColumn2}>
+          <img className={Style.image2} src={Image2} alt="Imagen" />
         </div>
         <div>
-          <p>
+          <p className={Style.projectsP}>
             Conduct thorough market research to <br />
             the fast target audience behaviours. <br />
             Submit as many design tasks
           </p>
           <button>
-            <img src={IconContact} alt="Contact Us" />
+            <img
+              className={Style.iconContact}
+              src={IconContact}
+              alt="Contact Us"
+            />
           </button>
         </div>
       </div>
 
       {/* Column 3 */}
-      <div>
-        <div>
-          <p>
+      <div className={Style.divColumn3}>
+        <div className={Style.subDivColumn2}>
+          <p className={Style.projectsP}>
             We believe that the surest measure of success <br />
             is when our partners with us more than half <br />
             It's more than just the visuals. We're here to <br />
             support your growth.
           </p>
-          <p>
+          <p className={Style.projectsP}>
             We believe that the surest measure of success <br />
             is when our partners with us more than half <br />
             It's more than just the visuals.
@@ -66,21 +70,21 @@ const ProjectsSection = () => {
         <div>
           <div>
             <h3>Our Mission</h3>
-            <p>
+            <p className={Style.projectsP}>
               Conduct thorough market research to the fast <br />
               target audience behaviours.
             </p>
           </div>
           <div>
             <div>
-              <img src={Image3} alt="" />
+              <img className={Style.image3} src={Image3} alt="" />
               <p>
                 Marketing <br />
                 Strategy
               </p>
             </div>
             <div>
-              <img src={Image4} alt="" />
+              <img className={Style.image4} src={Image4} alt="" />
               <p>
                 UX/UI <br />
                 Solution

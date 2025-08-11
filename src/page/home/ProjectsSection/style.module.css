@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.sectionProjects {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 120px 0 120px 0;
+
+  background-color: chocolate;
+}
+
+.projectsH4 {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.divColumn1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 620px;
+}
+
+.subDivColumn1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: aqua;
+
+  width: 562px;
+  margin-bottom: 60px;
+}
+
+.projectsH1 {
+  font-family: Marcellus;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.divH4 {
+  display: flex;
+  flex-direction: row;
+
+  color: #797e88;
+}
+
+.image1 {
+  width: auto;
+  height: 401px;
+}
+
+.projectsP {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+
+  color: #797e88;
+}
+
+.divColumn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  margin: 0 30px 0 60px;
+
+  gap: 30px;
+}
+
+.subDivColumn2 {
+}
+
+.image2 {
+  width: auto;
+  height: 297px;
+}
+
+.iconContact {
+  cursor: pointer;
+
+  margin-top: 40px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.iconContact:hover {
+  transform: scale(1.01);
+}
+
+.image3 {
+  width: 142px;
+  height: 142px;
+}
+.image4 {
+  width: 142px;
+  height: 142px;
+}
