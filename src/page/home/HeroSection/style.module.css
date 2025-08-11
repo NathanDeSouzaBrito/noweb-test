@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding-top: 106px;
 }
 
 .heroDiv {
@@ -218,6 +219,7 @@
   }
 }
 
+/* Galaxy Z Fold 5 */
 @media (max-width: 360px) {
   .heroH1Solution {
     position: relative;

@@ -83,7 +83,7 @@ const AboutSection = () => {
         </div>
 
         {/* Logos Area */}
-        <div className={Style.aboutDescription}>
+        <div className={`${Style.aboutDescription} ${Style.aboutLogos}`}>
           <img src={logo1} alt="Logo" />
           <img src={logo2} alt="Logo" />
           <img src={logo3} alt="Logo" />
