@@ -5,7 +5,7 @@ import ServicesSection from "./ServicesSection";
 import StatsSection from "./StatsSection";
 import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
 import ProjectsSection from "./ProjectsSection";
-// import CallToAction from "./CallToActionSection";
+import CallToAction from "./CallToActionSection";
 // import Footer from "./Footer";
 
 const Home = () => {
@@ -18,8 +18,8 @@ const Home = () => {
       <StatsSection />
       <HowWeWork />
       <ProjectsSection />
-      {/* <CallToAction />
-      <Footer /> */}
+      <CallToAction />
+      {/* <Footer /> */}
     </body>
   );
 };
