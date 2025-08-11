@@ -6,6 +6,7 @@ import StatsSection from "./StatsSection";
 import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
 import ProjectsSection from "./ProjectsSection";
 import CallToAction from "./CallToActionSection";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <HowWeWork />
       <ProjectsSection />
       <CallToAction />
+      <Footer />
     </body>
   );
 };
