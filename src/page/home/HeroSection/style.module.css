@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@font-face {
+  font-family: "Gallery Modern";
+  src: url("/src/assets/fonts/GalleryModern.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heroSection {
+  background-image: url(../../../assets/imgs/bgHeroSection.png);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 106px;
+}
+
+.heroDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.heroH1 {
+  font-family: "Gallery Modern";
+  font-weight: 400;
+  font-size: 220px;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.heroH3 {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #121212;
+}
+
+.heroP {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #121212;
+}
+
+.heroDivP {
+  margin-top: 93px;
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroDivA {
+  display: flex;
+  justify-content: flex-end;
+  margin: -50px 150px 75px 0;
+}
+
+.heroReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroReviews > img {
+  width: 160px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+.heroH3 > b {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #121212;
+}
+
+.iconWd {
+  width: 350px;
+  height: 170px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.iconReviews {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.iconReviews:hover,
+.iconWd:hover {
+  transform: scale(1.02);
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+
+/* Medium screens (tablets, ~1024px) */
+@media (max-width: 1024px) {
+  .heroSection {
+    padding: 106px 3% 0 3%;
+  }
+  .heroDiv {
+    gap: 30px;
+    flex-direction: row;
+  }
+
+  .heroH1 {
+    font-size: 120px;
+    text-align: center;
+  }
+
+  .heroDivP {
+    margin-bottom: 3%;
+  }
+
+  .heroP {
+    font-size: 15px;
+  }
+
+  .heroDivA {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  .iconWd {
+    width: 280px;
+    height: auto;
+  }
+}
+
+/* Small screens ( Phones, ~768px) */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 106px 3% 0 3%;
+  }
+
+  .heroH1 {
+    font-size: 64px;
+  }
+
+  .heroH3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .heroP {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: start;
+  }
+
+  .heroReviews > img {
+    width: 120px;
+    height: auto;
+  }
+
+  .heroDiv {
+    gap: 20px;
+  }
+
+  .iconWd {
+    width: 220px;
+  }
+}
+
+/* Very small screens(≤480px) */
+@media (max-width: 480px) {
+  .heroH1 {
+    font-size: 50px;
+  }
+
+  .heroH1Solution {
+    position: relative;
+    top: -325px;
+    left: -20px;
+  }
+
+  .heroH1Digital {
+    position: relative;
+    top: -10px;
+    left: -90px;
+    margin: 15px 0 25px 0;
+  }
+
+  .iconWd {
+    width: 150px;
+  }
+
+  .heroReviews {
+    margin: 15px;
+  }
+
+  .heroDivA > a > img {
+    width: 100px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
+
+  .heroDivP {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+
+/* Galaxy Z Fold 5 */
+@media (max-width: 360px) {
+  .heroH1Solution {
+    position: relative;
+    top: -435px;
+    left: 55px;
+  }
+
+  .heroH1Digital {
+    position: relative;
+    top: -10px;
+    left: -80px;
+    margin: 15px 0 25px 0;
+  }
+
+  .heroReviews {
+    margin: 15px;
+  }
+}
