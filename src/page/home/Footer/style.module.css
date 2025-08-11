@@ -56,3 +56,60 @@
   letter-spacing: 0%;
   vertical-align: middle;
 }
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+
+/* Medium screens */
+@media (max-width: 1030px) {
+  .divA {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    text-align: center;
+    gap: 15px;
+
+    align-items: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .footerP {
+    font-size: 14px;
+  }
+
+  .divA > a {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .divLinksFooterDown {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 440px) {
+  .divA > a {
+    font-size: 13px;
+  }
+  .footerP {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footerLine {
+    display: flex;
+    width: 360px;
+
+    margin-left: 5px;
+
+    background-color: #d8dde1;
+  }
+
+  .divAL {
+    display: flex;
+    flex-direction: column;
+  }
+}
