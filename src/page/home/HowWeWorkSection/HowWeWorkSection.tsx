@@ -6,19 +6,20 @@ import Icon3 from "../../../assets/icons/iconRepeat.svg";
 
 const HowWeWork = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 h-[630px]">
+    <section className="flex flex-col items-center justify-center gap-10 min-h-[630px] mt-8">
       <div>
-        <div className="flex flex-row justify-center">
-          <img src={IconShape} alt="Icon" />
-          <h3 className="font-[Plus_Jakarta_Sans] font-bold text-[16px] leading-[26px] tracking-[0] capitalize flex items-center mt-20">
+        <div className="flex flex-row justify-center items-center gap-2">
+          <img src={IconShape} alt="Icon" className="w-6 h-6 sm:w-8 sm:h-8" />
+          <h3 className="font-[Plus_Jakarta_Sans] font-bold text-sm sm:text-base leading-[26px] capitalize flex items-center sm:mt-10">
             Workflow
           </h3>
         </div>
-        <h1 className="font-[Marcellus] font-normal text-[54px] leading-[64px] tracking-[0] capitalize">
+        <h1 className="font-[Marcellus] font-normal text-3xl sm:text-4xl lg:text-[54px] leading-snug lg:leading-[64px] capitalize text-center">
           How we work
         </h1>
       </div>
-      <div className="flex justify-center items-center">
+
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6">
         <Card
           title="Research and Strategy"
           description="We conduct thorough research to understand your needs and develop a tailored strategy."

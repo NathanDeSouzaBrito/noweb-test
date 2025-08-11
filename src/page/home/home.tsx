@@ -3,7 +3,7 @@ import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
 import StatsSection from "./StatsSection";
-// import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
+import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
 // import ProjectsSection from "./ProjectsSection";
 // import CallToAction from "./CallToActionSection";
 // import Footer from "./Footer";
@@ -16,8 +16,8 @@ const Home = () => {
       <AboutSection />
       <ServicesSection />
       <StatsSection />
-      {/* <HowWeWork />
-      <ProjectsSection />
+      <HowWeWork />
+      {/* <ProjectsSection />
       <CallToAction />
       <Footer /> */}
     </body>
