@@ -110,7 +110,7 @@
 /* Medium screens (tablets, ~1024px) */
 @media (max-width: 1024px) {
   .heroSection {
-    padding: 0 3% 0 3%;
+    padding: 106px 3% 0 3%;
   }
   .heroDiv {
     gap: 30px;
@@ -144,7 +144,7 @@
 /* Small screens ( Phones, ~768px) */
 @media (max-width: 768px) {
   .heroSection {
-    padding: 0 3% 0 3%;
+    padding: 106px 3% 0 3%;
   }
 
   .heroH1 {
@@ -178,9 +178,6 @@
 
 /* Telas muito pequenas (≤480px) */
 @media (max-width: 480px) {
-  .heroSection {
-    padding: 0 3% 0 3%;
-  }
   .heroH1 {
     font-size: 50px;
   }
