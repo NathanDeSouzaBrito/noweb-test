@@ -6,7 +6,7 @@ import Icon3 from "../../../assets/icons/iconRepeat.svg";
 
 const HowWeWork = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 min-h-[630px] mt-8">
+    <section className="flex flex-col items-center justify-center gap-10 min-h-[630px] mt-8 p-8">
       <div>
         <div className="flex flex-row justify-center items-center gap-2">
           <img src={IconShape} alt="Icon" className="w-6 h-6 sm:w-8 sm:h-8" />
@@ -19,7 +19,7 @@ const HowWeWork = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+      <div className="flex flex-wrap justify-center  mx-[5%]">
         <Card
           title="Research and Strategy"
           description="We conduct thorough research to understand your needs and develop a tailored strategy."

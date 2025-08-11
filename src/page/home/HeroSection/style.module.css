@@ -176,7 +176,7 @@
   }
 }
 
-/* Telas muito pequenas (≤480px) */
+/* Very small screens(≤480px) */
 @media (max-width: 480px) {
   .heroH1 {
     font-size: 50px;

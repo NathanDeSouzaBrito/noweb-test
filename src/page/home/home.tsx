@@ -4,7 +4,7 @@ import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
 import StatsSection from "./StatsSection";
 import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
-// import ProjectsSection from "./ProjectsSection";
+import ProjectsSection from "./ProjectsSection";
 // import CallToAction from "./CallToActionSection";
 // import Footer from "./Footer";
 
@@ -17,8 +17,8 @@ const Home = () => {
       <ServicesSection />
       <StatsSection />
       <HowWeWork />
-      {/* <ProjectsSection />
-      <CallToAction />
+      <ProjectsSection />
+      {/* <CallToAction />
       <Footer /> */}
     </body>
   );
