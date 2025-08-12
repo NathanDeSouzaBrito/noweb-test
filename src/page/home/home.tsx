@@ -7,8 +7,12 @@ import HowWeWork from "./HowWeWorkSection/HowWeWorkSection";
 import ProjectsSection from "./ProjectsSection";
 import CallToAction from "./CallToActionSection";
 import Footer from "./Footer";
+import ModalSearch from "../../components/ModalSearch/index.tsx";
+import useCepStore from "../../store/cepStore.ts";
 
 const Home = () => {
+  const isOpen = useCepStore((s) => s.isModalOpen);
+
   return (
     <body>
       <NavBar />
@@ -20,6 +24,7 @@ const Home = () => {
       <ProjectsSection />
       <CallToAction />
       <Footer />
+      {isOpen && <ModalSearch />}
     </body>
   );
 };
