@@ -6,6 +6,7 @@ import Button from "../Button";
 import Search from "../Search";
 import IconButtonMenu from "../../assets/icons/iconThreeBars.svg";
 import IconClose from "../../assets/icons/iconClose.svg";
+import useCepStore from "../../store/cepStore";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,6 +23,7 @@ const NavBar = () => {
     { href: "/contactUs", text: "Contact Us" },
   ];
 
+  const open = useCepStore((s) => s.openModal);
   return (
     <nav className="fixed top-0 left-0 w-full flex h-[104px] items-center justify-around px-4 sm:px-6 lg:px-12 bg-white shadow-md z-50">
       {/* Logo */}
@@ -46,7 +48,7 @@ const NavBar = () => {
 
       {/* Search + Button Desktop */}
       <div className="hidden md:flex items-center gap-4 lg:gap-6">
-        <Search />
+        <Search onClick={open} />
         <Button />
       </div>
 
@@ -91,7 +93,7 @@ const NavBar = () => {
           </ul>
 
           <div className="flex gap-5 mt-5">
-            <Search />
+            <Search onClick={open} />
             <Button />
           </div>
         </div>
