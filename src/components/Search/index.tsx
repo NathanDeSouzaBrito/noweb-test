@@ -1,6 +1,9 @@
+import type { MouseEventHandler } from "react";
 import IconSearch from "../../assets/icons/iconsearch.svg";
 
-const Header = (props) => {
+const Header = (props: {
+  onClick: MouseEventHandler<HTMLButtonElement> | undefined;
+}) => {
   return (
     <button
       onClick={props.onClick}

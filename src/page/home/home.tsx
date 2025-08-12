@@ -14,7 +14,7 @@ const Home = () => {
   const isOpen = useCepStore((s) => s.isModalOpen);
 
   return (
-    <body>
+    <>
       <NavBar />
       <HeroSection />
       <AboutSection />
@@ -25,7 +25,7 @@ const Home = () => {
       <CallToAction />
       <Footer />
       {isOpen && <ModalSearch />}
-    </body>
+    </>
   );
 };
 
