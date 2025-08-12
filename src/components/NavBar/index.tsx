@@ -1,7 +1,7 @@
 import { useState } from "react";
 import IconArrow from "../../assets/icons/iconDownArrow.svg";
 import Li from "../Li";
-import Logo from "../../assets/icons/iconLogo.svg";
+import Logo from "../../assets/icons/iconNex.svg";
 import Button from "../Button";
 import Search from "../Search";
 import IconButtonMenu from "../../assets/icons/iconThreeBars.svg";
