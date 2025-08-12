@@ -37,30 +37,37 @@ export default function ModalSearch() {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 ">
       <div className="bg-white w-full max-w-xl rounded-lg shadow-lg">
         <div className="flex justify-between items-center px-4 py-3 border-b">
-          <h2 className="text-lg font-medium">Pesquisar CEP</h2>
-          <button onClick={close} aria-label="Fechar">
+          <h2 className="text-lg font-medium mx-8">Pesquisar CEP</h2>
+          <button
+            className="cursor-pointer w-[50px] h-[50px]"
+            onClick={close}
+            aria-label="Fechar"
+          >
             ✕
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-4 space-y-3">
+        <form
+          onSubmit={handleSubmit}
+          className="p-4 space-y-3 h-[300px] flex items-center justify-center flex-col gap-2 "
+        >
           <div>
-            <label className="block text-sm font-medium">CEP</label>
+            <label className="block text-sm font-medium w-[200px]">CEP</label>
             <input
               value={value}
               onChange={(e) => setValue(e.target.value)}
               placeholder="Ex: 00000-000 ou 00000000"
-              className="mt-1 block w-full rounded-md border px-3 py-2"
+              className="mt-1 block w-full rounded-md border px-3 py-2 w-[200px]"
             />
           </div>
 
           <div className="flex gap-2">
             <button
               type="submit"
-              className="px-4 py-2 rounded-md bg-green-600 text-white disabled:opacity-50"
+              className="px-4 py-2 rounded-md bg-green-600 text-white disabled:opacity-50 w-[80px] cursor-pointer"
               disabled={loading}
             >
               {loading ? "Pesquisando..." : "Pesquisar"}
@@ -72,7 +79,7 @@ export default function ModalSearch() {
                 setCepData(null);
                 setError(null);
               }}
-              className="px-4 py-2 border rounded-md"
+              className="px-4 py-2 border rounded-md w-[70px] cursor-pointer"
             >
               Limpar
             </button>
@@ -81,7 +88,7 @@ export default function ModalSearch() {
           {error && <div className="text-sm text-red-600">{error}</div>}
 
           {cepData && (
-            <div className="grid grid-cols-1 gap-2 mt-4">
+            <div className="grid grid-cols-2 gap-2 mt-4 h-[700px]">
               <Field label="Logradouro" value={cepData.logradouro} />
               <Field label="Complemento" value={cepData.complemento} />
               <Field label="Bairro" value={cepData.bairro} />
