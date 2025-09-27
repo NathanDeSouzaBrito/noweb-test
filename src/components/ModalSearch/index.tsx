@@ -17,7 +17,7 @@ export default function ModalSearch() {
     numero: "",
     telefone: "",
     email: "",
-    complemento: "",
+    completo: "",
   });
 
   async function handleSubmit(e?: React.FormEvent) {
@@ -80,7 +80,13 @@ export default function ModalSearch() {
                 setValue("");
                 setCepData(null);
                 setError(null);
-                setFormData({ nome: "", numero: "", telefone: "", email: "" });
+                setFormData({
+                  nome: "",
+                  numero: "",
+                  telefone: "",
+                  email: "",
+                  completo: "",
+                });
               }}
             >
               Limpar
@@ -124,8 +130,8 @@ export default function ModalSearch() {
             <Field label="Rua" value={cepData?.logradouro} />
             <Field label="Bairro" value={cepData?.bairro} />
             <Field
-              label="Complemento"
-              value={formData.complemento}
+              label="Completo"
+              value={formData.completo}
               onChange={handleFormChange}
               name="completo"
               readOnly={false}
