@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import getCepInfo from "../../services/cepService";
 import useCepStore from "../../store/cepStore";
+import styles from "./style.module.css";
 
 export default function ModalSearch() {
   const close = useCepStore((s) => s.closeModal);
@@ -10,6 +11,14 @@ export default function ModalSearch() {
   const [value, setValue] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const [formData, setFormData] = useState({
+    nome: "",
+    numero: "",
+    telefone: "",
+    email: "",
+    complemento: "",
+  });
 
   async function handleSubmit(e?: React.FormEvent) {
     e?.preventDefault();
@@ -36,40 +45,33 @@ export default function ModalSearch() {
     }
   }
 
+  function handleFormChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 ">
-      <div className="bg-white w-full max-w-xl rounded-lg shadow-lg">
-        <div className="flex justify-between items-center px-4 py-3 border-b">
-          <h2 className="text-lg font-medium mx-8">Pesquisar CEP</h2>
-          <button
-            className="cursor-pointer w-[50px] h-[50px]"
-            onClick={close}
-            aria-label="Fechar"
-          >
+    <div className={styles.overlay}>
+      <div className={styles.modal}>
+        <div className={styles.header}>
+          <h2>Pesquisar CEP</h2>
+          <button className={styles.closeButton} onClick={close}>
             ✕
           </button>
         </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="p-4 space-y-3 h-[300px] flex items-center justify-center flex-col gap-2 "
-        >
-          <div>
-            <label className="block text-sm font-medium w-[200px]">CEP</label>
+        {/* Formulário */}
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.fieldGroup}>
+            <label>CEP</label>
             <input
               value={value}
               onChange={(e) => setValue(e.target.value)}
               placeholder="Ex: 00000-000 ou 00000000"
-              className="mt-1 block w-full rounded-md border px-3 py-2 w-[200px]"
             />
           </div>
 
-          <div className="flex gap-2">
-            <button
-              type="submit"
-              className="px-4 py-2 rounded-md bg-green-600 text-white disabled:opacity-50 w-[80px] cursor-pointer"
-              disabled={loading}
-            >
+          <div className={styles.actions}>
+            <button type="submit" disabled={loading}>
               {loading ? "Pesquisando..." : "Pesquisar"}
             </button>
             <button
@@ -78,39 +80,88 @@ export default function ModalSearch() {
                 setValue("");
                 setCepData(null);
                 setError(null);
+                setFormData({ nome: "", numero: "", telefone: "", email: "" });
               }}
-              className="px-4 py-2 border rounded-md w-[70px] cursor-pointer"
             >
               Limpar
             </button>
           </div>
 
-          {error && <div className="text-sm text-red-600">{error}</div>}
+          {error && <div className={styles.error}>{error}</div>}
 
-          {cepData && (
-            <div className="grid grid-cols-2 gap-2 mt-4 h-[700px]">
-              <Field label="Logradouro" value={cepData.logradouro} />
-              <Field label="Complemento" value={cepData.complemento} />
-              <Field label="Bairro" value={cepData.bairro} />
-              <Field label="Cidade" value={cepData.localidade} />
-              <Field label="UF" value={cepData.uf} />
-              <Field label="CEP" value={cepData.cep} />
-            </div>
-          )}
+          {/* Inputs do formulário */}
+          <div className={styles.grid}>
+            <Field
+              label="Nome"
+              value={formData.nome}
+              onChange={handleFormChange}
+              name="nome"
+              readOnly={false}
+            />
+            <Field
+              label="Número"
+              value={formData.numero}
+              onChange={handleFormChange}
+              name="numero"
+              readOnly={false}
+            />
+            <Field
+              label="Telefone"
+              value={formData.telefone}
+              onChange={handleFormChange}
+              name="telefone"
+              readOnly={false}
+            />
+            <Field
+              label="E-mail"
+              value={formData.email}
+              onChange={handleFormChange}
+              name="email"
+              readOnly={false}
+            />
+
+            {/* Campos preenchidos pelo CEP */}
+            <Field label="Rua" value={cepData?.logradouro} />
+            <Field label="Bairro" value={cepData?.bairro} />
+            <Field
+              label="Complemento"
+              value={formData.complemento}
+              onChange={handleFormChange}
+              name="completo"
+              readOnly={false}
+            />
+            <Field label="Cidade" value={cepData?.localidade} />
+            <Field label="UF" value={cepData?.uf} />
+            <Field label="CEP" value={cepData?.cep} />
+          </div>
         </form>
       </div>
     </div>
   );
 }
 
-function Field({ label, value }: { label: string; value?: string }) {
+function Field({
+  label,
+  value,
+  onChange,
+  name,
+  readOnly = true,
+}: {
+  label: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  name?: string;
+  readOnly?: boolean;
+}) {
   return (
-    <div>
-      <label className="block text-xs text-gray-600">{label}</label>
+    <div className={styles.fieldGroup}>
+      <label>{label}</label>
       <input
-        readOnly
+        name={name}
+        readOnly={readOnly}
         value={value ?? ""}
-        className="mt-1 block w-full rounded-md border bg-gray-100 px-3 py-2"
+        onChange={onChange}
+        className={readOnly ? styles.readonly : ""}
       />
     </div>
   );
