@@ -16,11 +16,11 @@ const NavBar = () => {
 
   const menuItems = [
     { href: "/", text: "Home", icon: IconArrow },
-    { href: "/aboutUs", text: "About Us" },
-    { href: "/portfolio", text: "Portfolio", icon: IconArrow },
-    { href: "/pages", text: "Pages", icon: IconArrow },
-    { href: "/blog", text: "Blog", icon: IconArrow },
-    { href: "/contactUs", text: "Contact Us" },
+    { href: "/error", text: "About Us" },
+    { href: "/error", text: "Portfolio", icon: IconArrow },
+    { href: "/error", text: "Pages", icon: IconArrow },
+    { href: "/error", text: "Blog", icon: IconArrow },
+    { href: "/error", text: "Contact Us" },
   ];
 
   const open = useCepStore((s) => s.openModal);
